@@ -13,3 +13,4 @@ proceso:
 3. Instala las dependencias ejecutando:
    ```bash
    npm install
+   npm start
