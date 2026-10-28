@@ -1,0 +1,14 @@
+Durante la realización de la práctica, entendimos que SOAP es un protocolo de comunicación que utiliza sobres XML para intercambiar información de forma estructurada.
+
+Usamos XML porque aporta interoperabilidad, y permite que sistemas escritos en diferentes lenguajes se comuniquen sin problemas.
+
+El WSDL es una herramienta fundamental, nos permite saber exactamente qué operaciones ofrece el servicio, qué parámetros recibe y qué respuestas devuelve,
+lo que ayuda a que otras aplicaciones tengan el servicio sin necesidad de adivinar su estructura.
+
+Separar las rutas en un Router de Express fue importante para la escalabilidad, porque nos permitió registrar los servicios SOAP sin arruinar el archivo principal de la aplicación.
+
+Implementando el registro de peticiones como un middleware justifica su uso bajo el principio DRY, que centraliza el monitoreo de tiempos y estados HTTP en un solo lugar, 
+evitando repetir código en cada operación SOAP.
+
+En conclusion SOAP es conveniente en entornos empresariales donde se requiere una estandarización estricta y seguridad transaccional, 
+una API REST con JSON sería más sencilla y ligera para el desarrollo de aplicaciones móviles o web modernas donde el rendimiento es prioridad.
